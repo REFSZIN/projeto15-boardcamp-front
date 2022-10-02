@@ -3,7 +3,7 @@
 :root {
   --sidebar-width: 300px;
 
-  --colors-main: darkslateblue;
+  --colors-main: rgb(0, 0, 0);
 }
 
 * {
@@ -16,5 +16,5 @@ body {
 }
 
 #root {
-  min-height: 100vh;
+  min-height: 1vh;
 }

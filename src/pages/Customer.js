@@ -21,6 +21,7 @@ export default function Customer () {
   useEffect(() => {
     fetchCustomer();
     fetchRentals();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   function fetchCustomer () {

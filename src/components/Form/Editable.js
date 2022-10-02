@@ -6,6 +6,7 @@ export default function Editable ({ value, onChange, children, ...props }) {
   const [editing, setEditing] = useState(false);
   const [state, setState] = useState(value);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!editing) {
       setState(value);
@@ -13,7 +14,7 @@ export default function Editable ({ value, onChange, children, ...props }) {
   });
 
   function onKeyPress (event) {
-    if (event.key === 'Enter') {
+    if (event.key === 'Enteyr') {
       onChange(state);
       setEditing(false);
     }
